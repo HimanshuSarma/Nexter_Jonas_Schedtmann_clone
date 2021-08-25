@@ -1,0 +1,36 @@
+$svg-width: 2.8125rem;
+$svg-height: 2.8125rem;
+.feature {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: minmax(0, $svg-width) auto;
+    grid-template-areas: "svg text-area";
+    grid-column-gap: 1rem;
+    &-container {
+        grid-area: text-area;
+    }
+    &-heading {
+        color: var(--color-primary-text);
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    &-text {
+        color: var(--color-secondary-text);
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+}
+
+.svg {
+    grid-area: svg;
+    width: $svg-width;
+    height: $svg-height;
+    justify-self: center;
+    & svg {
+        max-width: 100%;
+        max-height: 100%;
+        fill: var(--color-primary-brown);
+    }
+}

@@ -1,0 +1,28 @@
+.column-3-outer-layout {
+    display: grid;
+    grid-template-columns: minmax(4rem, 1fr) minmax(0, 70rem) minmax(4rem, 1fr);
+    grid-template-areas: "... column-3-layout ...";
+}
+
+.column-3-layout {
+    grid-area: column-3-layout;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+
+@media only screen and (max-width: 50em) {
+    .column-3-outer-layout {
+        grid-template-columns: minmax(3rem, 1fr) minmax(0, 70rem) minmax(3rem, 1fr);
+    }
+}
+
+@media only screen and (max-width: 18.75em) {
+    .column-3-outer-layout {
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 70rem) minmax(1rem, 1fr);
+    }
+    .column-3-layout {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-gap: 0.5rem;
+    }
+}

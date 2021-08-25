@@ -1,0 +1,22 @@
+$sidebar_width: 5rem;
+.main-grid {
+    display: grid;
+}
+
+@media (min-width: 75em) {
+    .main-grid {
+        grid-template-columns: 5rem calc(100% - 5rem);
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    .main-grid {
+        grid-template-columns: 5rem calc(100% - 5rem);
+    }
+}
+
+@media only screen and (max-width: 62.5em) {
+    .main-grid {
+        grid-template-columns: 100%;
+    }
+}

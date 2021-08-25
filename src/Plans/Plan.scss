@@ -1,0 +1,68 @@
+.plan {
+    display: grid;
+    width: 100%;
+    &-img-container {
+        position: relative;
+        display: grid;
+    }
+    &-img {
+        width: 100%;
+    }
+    &-heading {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        justify-self: center;
+        margin: 0;
+        width: 80%;
+        text-align: center;
+        text-transform: initial;
+        background-color: var(--color-primary-dark);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &:hover {
+            background-color: var(--color-primary-dark);
+        }
+    }
+    &-heart-svg {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+        & svg {
+            fill: var(--color-primary-brown);
+        }
+    }
+    &-desc {
+        background-color: var(--color-background-light);
+        padding: 3rem 0.5rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(max-content, 50%));
+        grid-gap: 2rem;
+        &-features-container {
+            width: 100%;
+            justify-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 0.5rem;
+        }
+        &-features {
+            font-weight: 300;
+            color: var(--color-secondary-text);
+        }
+        &-features-svg {
+            width: 1.25rem;
+            fill: var(--color-primary-brown);
+            & svg {
+                width: 100%;
+                max-height: 1.25rem;
+            }
+        }
+        &-button {
+            grid-column: 1/-1;
+            width: 100%;
+        }
+    }
+}

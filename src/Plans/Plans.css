@@ -1,0 +1,36 @@
+.plans {
+  padding-bottom: 9rem;
+}
+
+.plans-container {
+  grid-gap: 4.5rem;
+}
+
+@media (max-width: 38.125em) {
+  .plans-container .plan {
+    max-width: 75%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media (max-width: 25.3125em) {
+  .plans-container .plan {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 20.625em) {
+  .plans {
+    -ms-grid-columns: minmax(1.5rem, 1fr) minmax(0, 70rem) minmax(1.5rem, 1fr);
+        grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 70rem) minmax(1.5rem, 1fr);
+  }
+  .plans-container {
+    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .plans-container .plan {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=Plans.css.map */

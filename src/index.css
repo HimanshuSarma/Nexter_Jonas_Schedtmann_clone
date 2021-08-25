@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button,
+a,
+i {
+    cursor: pointer;
+}
+
+form>* {
+    font-family: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    display: block;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+    --color-primary-brown: #c69963;
+    --color-primary-brown-dark: #B28451;
+    --color-primary-dark: #101d2c;
+    --color-primary-text: #54483A;
+    --color-secondary-text: #6D5D4B;
+    --color-background-light: #f9f7f6;
+    --color-hero-background-gradient1: rgba(16, 29, 44, 0.93);
+    --color-hero-background-gradient2: rgba(16, 29, 44, 0.93);
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 18.75em) {
+    html {
+        font-size: 70%;
+    }
+}

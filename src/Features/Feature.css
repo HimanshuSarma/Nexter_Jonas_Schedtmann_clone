@@ -1,0 +1,47 @@
+.feature {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 2.8125rem) auto;
+      grid-template-columns: minmax(0, 2.8125rem) auto;
+      grid-template-areas: "svg text-area";
+  grid-column-gap: 1rem;
+}
+
+.feature-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text-area;
+}
+
+.feature-heading {
+  color: var(--color-primary-text);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.feature-text {
+  color: var(--color-secondary-text);
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.svg {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: svg;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.svg svg {
+  max-width: 100%;
+  max-height: 100%;
+  fill: var(--color-primary-brown);
+}
+/*# sourceMappingURL=Feature.css.map */

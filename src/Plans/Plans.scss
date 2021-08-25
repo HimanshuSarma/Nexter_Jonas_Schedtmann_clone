@@ -1,0 +1,35 @@
+.plans {
+    // grid-gap: 5rem;
+    padding-bottom: 9rem;
+    &-container {
+        grid-gap: 4.5rem;
+    }
+}
+
+@media (max-width: 38.125em) {
+    .plans-container .plan {
+        max-width: 75%;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 25.3125em) {
+    // .plans {
+    //     grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 70rem) minmax(1.5rem, 1fr);
+    // }
+    .plans-container .plan {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 20.625em) {
+    .plans {
+        grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 70rem) minmax(1.5rem, 1fr);
+    }
+    .plans-container {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+    .plans-container .plan {
+        max-width: 100%;
+    }
+}

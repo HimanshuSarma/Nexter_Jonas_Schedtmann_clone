@@ -1,0 +1,66 @@
+.sidebar {
+  background-color: var(--color-primary-brown);
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sidebar-ham {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  position: relative;
+  background-color: white;
+  height: 2px;
+}
+
+.sidebar-ham::before, .sidebar-ham::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+
+.sidebar-ham::before {
+  bottom: 0.9375rem;
+}
+
+.sidebar-ham::after {
+  top: 0.9375rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .sidebar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 1.8rem 1.1rem;
+  }
+  .sidebar-ham {
+    width: 2.5rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .sidebar-ham::before {
+    bottom: 0.7rem;
+  }
+  .sidebar-ham::after {
+    top: 0.7rem;
+  }
+}
+/*# sourceMappingURL=Sidebar.css.map */

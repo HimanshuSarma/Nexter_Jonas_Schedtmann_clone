@@ -1,0 +1,14 @@
+.button-comp {
+    width: max-content;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--color-primary-brown);
+    color: white;
+    font-size: 0.9375rem;
+    padding: 1.1rem 2rem;
+    // margin-bottom: 7rem;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: var(--color-primary-brown-dark);
+    }
+}

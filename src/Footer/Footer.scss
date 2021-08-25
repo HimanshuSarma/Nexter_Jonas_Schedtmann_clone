@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--color-primary-dark);
+    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: minmax(0.5rem, 1fr) 95% minmax(0.5rem, 1fr);
+    grid-template-areas: "... content ...";
+    &-content {
+        grid-area: content;
+        &-btns {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        }
+        &-copyright-para {
+            width: 70%;
+            text-align: center;
+            margin: 4rem auto 1vw;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 300;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    .footer-content-copyright-para {
+        margin-bottom: 1.5rem;
+    }
+}

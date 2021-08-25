@@ -1,0 +1,26 @@
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 75em) {
+  .main-grid {
+    -ms-grid-columns: 5rem calc(100% - 5rem);
+        grid-template-columns: 5rem calc(100% - 5rem);
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .main-grid {
+    -ms-grid-columns: 5rem calc(100% - 5rem);
+        grid-template-columns: 5rem calc(100% - 5rem);
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .main-grid {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+/*# sourceMappingURL=MainGrid.css.map */
